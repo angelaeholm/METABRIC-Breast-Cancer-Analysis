@@ -83,6 +83,16 @@ ER-positive and PR-positive status had negative posterior mean coefficients, sug
 
 The MCMC convergence diagnostics were favorable, with R-hat values of 1.00 for all reported parameters.
 
+## Overall Project Summary
+
+This project combined exploratory data analysis and Bayesian logistic regression to examine how patient age and breast cancer biomarkers relate to recorded mortality in the METABRIC clinical dataset. The goal was to move beyond describing the data and explore how multiple clinical characteristics could be evaluated together using statistical modeling.
+
+The exploratory analysis provided an understanding of the patient population, biomarker distributions, and differences in recorded survival status. These findings established the foundation for the Bayesian model, which examined age at diagnosis, ER status, PR status, and HER2 status simultaneously using 496 complete patient records.
+
+The Bayesian results showed that increasing age at diagnosis and HER2-positive status were associated with higher odds of recorded mortality. ER-positive and PR-positive status showed negative posterior mean coefficients, but their credible intervals included zero, indicating greater uncertainty about these relationships. The model also demonstrated favorable convergence diagnostics, supporting the reliability of the posterior sampling process.
+
+From a healthcare analytics perspective, this project demonstrates how clinical data can be cleaned, explored, and modeled to identify meaningful patterns while accounting for statistical uncertainty. Although the findings cannot establish causation or predict individual patient survival, they illustrate the value of combining clinical knowledge with data analytics to support further research into breast cancer outcomes.
+
 ## Technologies and Analytical Methods
 
 **Programming and environment:** Python, Jupyter Notebook
